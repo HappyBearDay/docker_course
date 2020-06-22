@@ -1,10 +1,15 @@
 
 # CMD
 
-## RUN
+## RUN / Create
 docker container run --publish 80:80 nginx
 docker container run --publish 80:80 --detach nginx
 docker container run --publish 80:80 --detach --name webhost nginx 
+
+docker container run --publish 80:80 --name webhost -d nginx:1.11 nginx -T
+( -d enable to select a version of image)
+
+
 
 ## STOP
 docker stop 28e089258e10
