@@ -30,3 +30,11 @@ docker container top webhost
 ### REMOVE
 docker container rm 193b74a66d0f
 docker container rm -f 42205e21c6a1
+
+
+### RUNNING PROCESS of A CONTAINER
+docker top mongo
+
+
+### LOG INTO DOCKER VM
+docker run -it --rm --privileged --pid=host justincormack/nsenter1
