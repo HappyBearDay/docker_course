@@ -1,7 +1,11 @@
-
 # CMD
 
-## RUN / Create
+## CMD 01 
+
+### DOCKER VERSION
+Docker version
+
+### RUN &/OR CREATE
 docker container run --publish 80:80 nginx
 docker container run --publish 80:80 --detach nginx
 docker container run --publish 80:80 --detach --name webhost nginx 
@@ -10,20 +14,19 @@ docker container run --publish 80:80 --name webhost -d nginx:1.11 nginx -T
 ( -d enable to select a version of image)
 
 
-
-## STOP
+### STOP
 docker stop 28e089258e10
 
-## LIST OF CONTAINER
+### LIST OF CONTAINER
 docker container ls
 docker container ls -a
 
-## CONTAINER LOGS
+### CONTAINER LOGS
 docker container logs webhost
 
-## CONTAINER INFO
+### CONTAINER INFO
 docker container top webhost
 
-#1 REMOVE
+### REMOVE
 docker container rm 193b74a66d0f
 docker container rm -f 42205e21c6a1
